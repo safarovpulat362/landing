@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Продукт — ваша новая возможность</title>
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      color: #fff;
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+    }
+    .container { max-width: 720px; margin: 0 auto; padding: 0 20px; }
+    h2 { font-size: 26px; font-weight: 700; text-align: center; margin-bottom: 28px; }
+    .btn {
+      display: inline-block; background: #00c9b7; color: #0b1a2b;
+      font-weight: 700; font-size: 18px; padding: 16px 36px;
+      border-radius: 20px; text-decoration: none; text-align: center;
+      border: none; cursor: pointer; transition: opacity .2s;
+    }
+    .btn:hover { opacity: .85; }
+    .btn-block { display: block; width: 100%; }
+    .card { background: #152d44; border-radius: 20px; padding: 32px 24px; }
+
+    /* БЛОК 1. ГЕРОЙ */
+    .hero { background: #0b1a2b; padding: 60px 20px; text-align: center; }
+    .hero h1 { font-size: 34px; font-weight: 700; line-height: 1.2; margin-bottom: 14px; }
+    .hero h1 span { color: #00c9b7; }
+    .hero p { font-size: 18px; color: #b0c7dd; margin-bottom: 28px; max-width: 520px; margin-left: auto; margin-right: auto; }
+
+    /* БЛОК 2. О ПРОДУКТЕ */
+    .about { background: #152d44; padding: 60px 20px; text-align: center; }
+    .about p { font-size: 17px; color: #b0c7dd; max-width: 560px; margin: 0 auto 12px; }
+    .about p:last-child { margin-bottom: 0; }
+
+    /* БЛОК 3. ПРЕИМУЩЕСТВА */
+    .benefits { background: #0b1a2b; padding: 60px 20px; }
+    .benefits-grid { display: flex; flex-direction: column; gap: 16px; }
+    .benefits-grid .card { text-align: center; }
+    .benefits-grid .icon { font-size: 32px; display: block; margin-bottom: 10px; }
+    .benefits-grid h3 { font-size: 18px; font-weight: 700; margin-bottom: 6px; }
+    .benefits-grid p { color: #b0c7dd; font-size: 15px; }
+
+    /* БЛОК 4. ДЛЯ КОГО */
+    .audience { background: #152d44; padding: 60px 20px; }
+    .audience-grid { display: flex; flex-direction: column; gap: 16px; }
+    .audience-grid .card { text-align: center; }
+    .audience-grid .emoji { font-size: 36px; display: block; margin-bottom: 10px; }
+    .audience-grid h3 { font-size: 18px; font-weight: 700; margin-bottom: 6px; }
+    .audience-grid p { color: #b0c7dd; font-size: 15px; }
+
+    /* БЛОК 5. КЕЙС */
+    .case { background: #0b1a2b; padding: 60px 20px; }
+    .case-grid { display: flex; flex-direction: column; gap: 16px; }
+    .case-step { background: #152d44; border-radius: 20px; padding: 24px; }
+    .case-step .marker { color: #00c9b7; font-weight: 700; font-size: 16px; }
+    .case-step p { color: #b0c7dd; font-size: 15px; margin-top: 6px; }
+
+    /* БЛОК 6. ФОРМА */
+    .form-block { background: #152d44; padding: 60px 20px; text-align: center; }
+    .form-block .card { background: #0b1a2b; max-width: 480px; margin: 0 auto; }
+    .form-block input {
+      width: 100%; padding: 14px 18px; border-radius: 16px; border: 2px solid transparent;
+      background: #152d44; color: #fff; font-size: 16px; outline: none;
+      margin-bottom: 14px; transition: border .2s;
+    }
+    .form-block input:focus { border-color: #00c9b7; }
+    .form-block input::placeholder { color: rgba(255,255,255,0.35); }
+    .form-block .hint { font-size: 13px; color: rgba(255,255,255,0.4); margin-top: 12px; }
+
+    /* БЛОК 7. ФИНАЛЬНЫЙ CTA */
+    .cta-final { background: #0b1a2b; padding: 60px 20px; text-align: center; }
+    .cta-final p { color: #b0c7dd; font-size: 16px; margin-bottom: 24px; }
+
+    /* АДАПТИВ */
+    @media (min-width: 768px) {
+      .container { max-width: 900px; }
+      .hero h1 { font-size: 44px; }
+      .benefits-grid { flex-direction: row; }
+      .benefits-grid .card { flex: 1; }
+      .audience-grid { flex-direction: row; }
+      .audience-grid .card { flex: 1; }
+      .case-grid { flex-direction: row; }
+      .case-step { flex: 1; }
+      .form-block .card { padding: 40px 36px; }
+      .form-row { display: flex; gap: 12px; align-items: center; }
+      .form-row input { margin-bottom: 0; flex: 1; }
+      .form-row .btn { flex-shrink: 0; }
+    }
+    @media (max-width: 480px) {
+      .hero h1 { font-size: 26px; }
+      .hero p { font-size: 16px; }
+      h2 { font-size: 22px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- БЛОК 1. ГЕРОЙ -->
+<section class="hero">
+  <div class="container">
+    <h1>Зарабатывайте больше — <span>с нашим продуктом</span></h1>
+    <p>Автоматизируем рутину, чтобы вы сосредоточились на главном. Результат уже в первую неделю.</p>
+    <a class="btn" href="#">Получить доступ →</a>
+  </div>
+</section>
+
+<!-- БЛОК 2. О ПРОДУКТЕ -->
+<section class="about">
+  <div class="container">
+    <h2>Что это и как работает</h2>
+    <p>Готовое решение, которое берёт на себя техническую часть и выдаёт чистый результат. Вы тратите 5 минут на настройку — и получаете работающий инструмент без сложностей.</p>
+    <p>Подходит фрилансерам, предпринимателям и командам, которые хотят делать больше за меньшее время.</p>
+  </div>
+</section>
+
+<!-- БЛОК 3. ПРЕИМУЩЕСТВА -->
+<section class="benefits">
+  <div class="container">
+    <h2>Почему это выгодно</h2>
+    <div class="benefits-grid">
+      <div class="card">
+        <span class="icon">⚡</span>
+        <h3>Мгновенный старт</h3>
+        <p>Начинаете пользоваться через 5 минут. Без установки и сложных настроек.</p>
+      </div>
+      <div class="card">
+        <span class="icon">🛡️</span>
+        <h3>Гарантия результата</h3>
+        <p>Вернём деньги, если не выполним обещание. Риск — нулевой.</p>
+      </div>
+      <div class="card">
+        <span class="icon">📞</span>
+        <h3>Поддержка 24/7</h3>
+        <p>Решаем вопросы за минуту. В любое время дня и ночи.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- БЛОК 4. ДЛЯ КОГО -->
+<section class="audience">
+  <div class="container">
+    <h2>Кому подходит</h2>
+    <div class="audience-grid">
+      <div class="card">
+        <span class="emoji">👩‍💻</span>
+        <h3>Фрилансерам</h3>
+        <p>Устали тратить часы на отчёты и сбор данных? Автоматизируйте и берите больше заказов.</p>
+      </div>
+      <div class="card">
+        <span class="emoji">🏢</span>
+        <h3>Малому бизнесу</h3>
+        <p>Сократите издержки на ручном труде. Команда работает быстрее без лишних людей.</p>
+      </div>
+      <div class="card">
+        <span class="emoji">🙋</span>
+        <h3>Новичкам</h3>
+        <p>Всё понятно без инструкций. Просто начните — разберётесь по ходу.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- БЛОК 5. КЕЙС -->
+<section class="case">
+  <div class="container">
+    <h2>Как это работает на практике</h2>
+    <div class="case-grid">
+      <div class="case-step">
+        <div class="marker">Ситуация</div>
+        <p>Марина тратила 3 дня в месяц на ручной сбор данных для отчёта. Один раз ошиблась — сорвала дедлайн.</p>
+      </div>
+      <div class="case-step">
+        <div class="marker">Решение</div>
+        <p>Подключила наш сервис. Данные собираются автоматически, отчёт формируется за 2 клика.</p>
+      </div>
+      <div class="case-step">
+        <div class="marker">Результат</div>
+        <p>Дедлайн сдан вовремя. Марина экономит 10 часов в неделю и берёт больше заказов.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- БЛОК 6. ФОРМА ЗАЯВКИ -->
+<section class="form-block">
+  <div class="container">
+    <h2>Оставьте email — получите доступ</h2>
+    <div class="card">
+      <form action="#" method="post">
+        <div class="form-row">
+          <input type="email" name="email" placeholder="Ваш email" required>
+          <button class="btn btn-block" type="submit">Получить доступ</button>
+        </div>
+      </form>
+      <p class="hint">Без спама. Отписка в один клик.</p>
+    </div>
+  </div>
+</section>
+
+<!-- БЛОК 7. ФИНАЛЬНЫЙ CTA -->
+<section class="cta-final">
+  <div class="container">
+    <h2>Готовы попробовать?</h2>
+    <p>Первые 7 дней — бесплатно. Без карты и обязательств.</p>
+    <a class="btn" href="#">Получить доступ →</a>
+  </div>
+</section>
+
+</body>
+</html>

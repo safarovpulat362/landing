@@ -1,0 +1,46 @@
+2026-06-30T12:12:21.068856+0300 | INFO | main | Сервер запущен. Ожидание запросов...
+2026-06-30T12:12:53.814884+0300 | INFO | d01ee840-c3ca-4046-9bad-7a58da842977 | Входящий запрос | user_id=test_user | message=??????! ? ???? ????????? ?????????? ??????
+2026-06-30T12:12:55.226278+0300 | WARNING | d01ee840-c3ca-4046-9bad-7a58da842977 | Попытка 1/3 не удалась: Client error '404 Not Found' for url 'https://api.proxyapi.ru/gigachat/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404. Повтор через 1.0с
+2026-06-30T12:12:57.264022+0300 | WARNING | d01ee840-c3ca-4046-9bad-7a58da842977 | Попытка 2/3 не удалась: Client error '404 Not Found' for url 'https://api.proxyapi.ru/gigachat/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404. Повтор через 2.0с
+2026-06-30T12:12:57.300219+0300 | ERROR | d01ee840-c3ca-4046-9bad-7a58da842977 | Ошибка GigaChat: Client error '404 Not Found' for url 'https://api.proxyapi.ru/gigachat/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+2026-06-30T12:12:57.301218+0300 | INFO | d01ee840-c3ca-4046-9bad-7a58da842977 | Ответ | status=escalated | reply=Произошла ошибка при обработке запроса. Ваш запрос передан оператору.
+2026-06-30T12:14:31.248791+0300 | INFO | 1a8a3891-cf0c-40fa-b449-b76272aef8ca | Входящий запрос | user_id=test_user | message=??????! ? ???? ????????? ?????????? ??????
+2026-06-30T12:14:32.409438+0300 | WARNING | 1a8a3891-cf0c-40fa-b449-b76272aef8ca | Попытка 1/3 не удалась: Client error '404 Not Found' for url 'https://api.proxyapi.ru/gigachat/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404. Повтор через 1.0с
+2026-06-30T12:14:34.450892+0300 | WARNING | 1a8a3891-cf0c-40fa-b449-b76272aef8ca | Попытка 2/3 не удалась: Client error '404 Not Found' for url 'https://api.proxyapi.ru/gigachat/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404. Повтор через 2.0с
+2026-06-30T12:14:34.501290+0300 | ERROR | 1a8a3891-cf0c-40fa-b449-b76272aef8ca | Ошибка GigaChat: Client error '404 Not Found' for url 'https://api.proxyapi.ru/gigachat/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+2026-06-30T12:14:34.502307+0300 | INFO | 1a8a3891-cf0c-40fa-b449-b76272aef8ca | Ответ | status=escalated | reply=Произошла ошибка при обработке запроса. Ваш запрос передан оператору.
+2026-06-30T12:14:57.582095+0300 | INFO | 3ac554f9-3662-4106-b1fb-6da677c00567 | Входящий запрос | user_id=test_user | message=??????! ? ???? ????????? ?????????? ??????
+2026-06-30T12:14:58.709760+0300 | WARNING | 3ac554f9-3662-4106-b1fb-6da677c00567 | Попытка 1/3 не удалась: Client error '404 Not Found' for url 'https://api.proxyapi.ru/gigachat/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404. Повтор через 1.0с
+2026-06-30T12:15:00.761764+0300 | WARNING | 3ac554f9-3662-4106-b1fb-6da677c00567 | Попытка 2/3 не удалась: Client error '404 Not Found' for url 'https://api.proxyapi.ru/gigachat/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404. Повтор через 2.0с
+2026-06-30T12:15:00.813222+0300 | ERROR | 3ac554f9-3662-4106-b1fb-6da677c00567 | Ошибка GigaChat: Client error '404 Not Found' for url 'https://api.proxyapi.ru/gigachat/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+2026-06-30T12:15:00.814251+0300 | INFO | 3ac554f9-3662-4106-b1fb-6da677c00567 | Ответ | status=escalated | reply=Произошла ошибка при обработке запроса. Ваш запрос передан оператору.
+2026-06-30T12:15:29.354786+0300 | INFO | cae1d589-0487-4cd8-a952-85b875dbdf78 | Входящий запрос | user_id=test_user | message=Привет! У меня сломалась стиральная машина
+2026-06-30T12:15:30.482297+0300 | WARNING | cae1d589-0487-4cd8-a952-85b875dbdf78 | Попытка 1/3 не удалась: Client error '404 Not Found' for url 'https://api.proxyapi.ru/gigachat/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404. Повтор через 1.0с
+2026-06-30T12:15:32.543665+0300 | WARNING | cae1d589-0487-4cd8-a952-85b875dbdf78 | Попытка 2/3 не удалась: Client error '404 Not Found' for url 'https://api.proxyapi.ru/gigachat/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404. Повтор через 2.0с
+2026-06-30T12:15:32.584208+0300 | ERROR | cae1d589-0487-4cd8-a952-85b875dbdf78 | Ошибка GigaChat: Client error '404 Not Found' for url 'https://api.proxyapi.ru/gigachat/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+2026-06-30T12:15:32.585117+0300 | INFO | cae1d589-0487-4cd8-a952-85b875dbdf78 | Ответ | status=escalated | reply=Произошла ошибка при обработке запроса. Ваш запрос передан оператору.
+2026-06-30T12:15:36.612266+0300 | INFO | main | HTTP-клиент закрыт. Сервер остановлен.
+2026-06-30T12:15:45.627631+0300 | INFO | main | Сервер запущен. Ожидание запросов...
+2026-06-30T12:16:07.231404+0300 | INFO | main | Сервер запущен. Ожидание запросов...
+2026-06-30T12:16:36.647556+0300 | INFO | a4356221-746e-416f-be15-84747f4903b7 | Входящий запрос | user_id=test_user | message=Привет! У меня сломалась стиральная машина
+2026-06-30T12:16:37.092913+0300 | WARNING | a4356221-746e-416f-be15-84747f4903b7 | ProxyAPI недоступен (Client error '404 Not Found' for url 'https://api.proxyapi.ru/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404). Используется мок-ответ.
+2026-06-30T12:16:37.093912+0300 | INFO | a4356221-746e-416f-be15-84747f4903b7 | Ответ | status=ok | reply=Здравствуйте! Починим вашу стиральную машину в Краснодаре. Называем цену до выезда, диагностика бесплатно. Платите только когда всё заработает. Какой адрес?
+2026-06-30T12:16:43.006940+0300 | INFO | a1985206-357b-4b7e-bf43-5bd528b7e0b2 | Входящий запрос | user_id=test_user | message=Привет! У меня сломалась стиральная машина
+2026-06-30T12:16:43.006940+0300 | INFO | a1985206-357b-4b7e-bf43-5bd528b7e0b2 | Ответ найден в кэше
+2026-06-30T12:16:43.006940+0300 | INFO | a1985206-357b-4b7e-bf43-5bd528b7e0b2 | Ответ | status=ok | reply=Здравствуйте! Починим вашу стиральную машину в Краснодаре. Называем цену до выезда, диагностика бесплатно. Платите только когда всё заработает. Какой адрес?
+2026-06-30T12:16:51.204430+0300 | INFO | c503900b-68d1-4857-81d7-1e62eb807670 | Входящий запрос | user_id=test_user | message=Привет! У меня сломалась стиральная машина
+2026-06-30T12:16:51.204430+0300 | INFO | c503900b-68d1-4857-81d7-1e62eb807670 | Ответ найден в кэше
+2026-06-30T12:16:51.204430+0300 | INFO | c503900b-68d1-4857-81d7-1e62eb807670 | Ответ | status=ok | reply=Здравствуйте! Починим вашу стиральную машину в Краснодаре. Называем цену до выезда, диагностика бесплатно. Платите только когда всё заработает. Какой адрес?

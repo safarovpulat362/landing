@@ -1,0 +1,6 @@
+chatbot_proxy/
+*.pyc
+__pycache__/
+*.log
+*.zip
+server_*.log
